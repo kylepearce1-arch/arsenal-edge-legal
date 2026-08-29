@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Arsenal Edge</title>
+<meta name="description" content="What the Arsenal Edge bowling app collects, who else sees it, and how to delete it.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+
+<a class="back" href="index.html">&larr; Arsenal Edge</a>
+
+<header>
+  <p class="brand">Arsenal Edge</p>
+  <h1>Privacy Policy</h1>
+  <p class="effective">Effective August 29, 2026</p>
+</header>
+
+<p class="lede">Arsenal Edge is provided by Aplomb Financial LLC ("we", "us"). This policy
+explains what the Arsenal Edge mobile app collects, why, who else can see it, and how to
+get rid of it.</p>
+
+<p>We have tried to make this specific rather than generic. Where we say we do not collect
+something, we mean the app contains no code that collects it.</p>
+
+<p>Questions: <a href="mailto:Kyle@aplombfinancial.com">Kyle@aplombfinancial.com</a></p>
+
+<div class="card">
+  <h2>The short version</h2>
+  <ul>
+    <li>We collect the email address you sign up with, the bowler profile you fill in, and
+      the bowling data you record.</li>
+    <li>We do not collect your location, contacts, photos, or camera. The app requests
+      <strong>no device permissions at all</strong>.</li>
+    <li>There are no ads, no analytics, no trackers, and no advertising identifier. We do
+      not sell your data or share it for advertising.</li>
+    <li>Pinpoint sends bowling context and your typed question to a third-party AI provider
+      so it can answer. It does not send your name, email, or account identifier.</li>
+    <li>You can permanently delete your account and all of its data from inside the app.</li>
+  </ul>
+</div>
+
+<h2>1. What we collect</h2>
+
+<p><strong>Account information.</strong> When you create an account we collect your email
+address, and Supabase (our hosting provider) stores your password in hashed form. We never
+see, store, or log your password ourselves. We also keep the timestamps Supabase records,
+such as when your account was created and confirmed.</p>
+
+<p><strong>Bowler profile.</strong> Whatever you choose to enter: handedness, average
+range, delivery style, ball speed, and rev rate. All of it is optional and you can edit it
+at any time.</p>
+
+<p><strong>Your bowling data.</strong> This is the substance of the app:</p>
+<ul>
+  <li>Sessions: the bowling center name, lane pair, oil pattern, session type, number of
+    bowlers on the pair, and your notes.</li>
+  <li>Games, frames, and shots: scores, pinfall, strikes, spares, splits, washouts, fouls,
+    which pins were left standing, spare miss direction, and the line you played.</li>
+  <li>Your arsenal: which balls you own, plus your own layout description, surface,
+    reaction notes, and general notes.</li>
+  <li>Leagues you save, oil patterns you create, and your practice focuses, drills, and
+    attempts, including execution notes.</li>
+</ul>
+
+<p>Several of these are free-text fields. Whatever you type into them is stored as you
+typed it, so please avoid putting sensitive personal information in a notes field.</p>
+
+<p><strong>Pinpoint usage counter.</strong> We count how many Pinpoint requests you make
+each day, to enforce a daily limit. We store the count and the date. We do not store your
+messages.</p>
+
+<p><strong>Local diagnostics.</strong> If the app crashes, it saves the error name,
+message, and stack trace on your device, keeping at most the ten most recent. This never
+leaves your phone automatically. It contains no profile, account, or bowling data. The
+only way it reaches us is if you tap "Email support" after a crash, which opens a draft in
+your own mail app containing the error text &mdash; you decide whether to send it.</p>
+
+<h2>2. What we do not collect</h2>
+
+<p>The app declares no Android or iOS permissions, and the following are absent from the
+app entirely &mdash; not merely unused, but not present in the software:</p>
+<ul>
+  <li>Location, GPS, camera, microphone, photos, contacts, and calendar</li>
+  <li>Advertising identifiers, device fingerprints, and any persistent hardware identifier</li>
+  <li>Analytics, telemetry, attribution, and crash-reporting SDKs</li>
+  <li>Advertising networks</li>
+  <li>Push notifications</li>
+  <li>Social or third-party sign-in</li>
+</ul>
+<p>The app makes network requests to exactly one destination: our Supabase backend.</p>
+
+<h2>3. How Pinpoint works</h2>
+
+<p>Pinpoint is the app's coaching assistant. It runs on a third-party AI provider &mdash;
+currently Google's Gemini API &mdash; which we call from our server, never from your
+phone.</p>
+
+<p><strong>What is sent to the AI provider</strong> when you ask Pinpoint something:</p>
+<ul>
+  <li>Your typed message, and up to your last ten messages in the conversation</li>
+  <li>Your bowler profile attributes: handedness, average range, delivery style, ball
+    speed, rev rate</li>
+  <li>Up to twenty balls from your arsenal, including your own free-text layout, surface,
+    and reaction notes</li>
+  <li>In general chat, statistics we calculate from up to your 500 most recent completed
+    games &mdash; averages, strike and spare rates, common leaves, per-ball performance,
+    the date range of your play history, and averages grouped by bowling center and oil
+    pattern</li>
+  <li>During live scoring, your current session context: center, lane pair, pattern, game
+    and frame number, current ball, and recent leaves</li>
+  <li>Your active practice focus</li>
+</ul>
+
+<p><strong>What is never sent to the AI provider:</strong> your name, your email address,
+your account identifier, your login token, and the free-text notes attached to execution
+markers. The request carries no identifier that ties it back to you.</p>
+
+<p><strong>What we do with the conversation:</strong> nothing. We do not store Pinpoint
+conversations, on our servers or on your device. They live in the app's memory while the
+screen is open and are gone when you leave it. Our server logs record only technical
+metrics such as the model used and token counts &mdash; never your messages.</p>
+
+<p>The AI provider processes the request under its own terms and its own retention
+practices, which we do not control. If you would rather a piece of information not be
+processed this way, do not put it in a note field or a Pinpoint message.</p>
+
+<h2>4. Who else sees your data</h2>
+
+<p>We do not sell your data, and we do not share it for advertising. We use these service
+providers:</p>
+<ul>
+  <li><strong>Supabase</strong> &mdash; hosts our database, authentication, and server
+    functions. All of your account and bowling data is stored there. Like any hosting
+    provider, Supabase processes technical information such as IP addresses and request
+    metadata in its platform logs.</li>
+  <li><strong>Google (Gemini API)</strong> &mdash; the AI provider described in Section 3.</li>
+  <li><strong>Our email provider</strong> &mdash; sends account confirmation and password
+    reset emails, which necessarily includes your email address.</li>
+  <li><strong>Google Play</strong> &mdash; distributes the app. Google collects its own
+    data about installs independently of us, governed by Google's privacy policy.</li>
+</ul>
+
+<p>Nothing you create in Arsenal Edge is visible to other users. There is no sharing, no
+social feed, and no public profile. Your data is readable only by your own account, which
+we enforce at the database level.</p>
+
+<p>We may also disclose data if we are legally required to, or to protect the safety and
+rights of our users.</p>
+
+<h2>5. Deleting your account</h2>
+
+<p>You can delete your account from <strong>Account &amp; Settings &rarr; Delete
+account</strong>. You will be asked to type DELETE to confirm.</p>
+
+<p>Deletion is immediate and permanent. There is no grace period, no recovery window, and
+no way for us to restore a deleted account. It removes your login, your profile, your
+sessions, games, frames, and shots, your arsenal, your leagues, your custom oil patterns,
+your practice history, and your Pinpoint usage counters. The app also wipes the bowling
+data stored on your device, including anything not yet synced.</p>
+
+<p>Two things do not disappear at that instant. Our hosting provider's platform logs and
+routine backups may retain records for a limited period before aging out, and the local
+crash log stays on your device because it contains no account or bowling data &mdash;
+deleting the app removes it.</p>
+
+<p>If you cannot access the app, see the
+<a href="delete-account.html">account deletion request page</a>.</p>
+
+<h2>6. Your choices and rights</h2>
+
+<p>You can view and edit your profile and arsenal at any time in the app, and delete
+individual sessions, games, and balls. Deleting your account removes everything.</p>
+
+<p>Depending on where you live, you may have rights to access, correct, delete, or receive
+a copy of your personal data, and to object to certain processing. To exercise any of
+these, email us at <a href="mailto:Kyle@aplombfinancial.com">Kyle@aplombfinancial.com</a>.</p>
+
+<p>We want to be straightforward about one limitation: the app currently has <strong>no
+data export feature</strong>. If you ask us for a copy of your data we will assemble it
+manually.</p>
+
+<h2>7. How we protect your data</h2>
+
+<p>Every table in our database enforces row-level security, so your rows are readable only
+by your authenticated account. Your login session is stored in your device's secure
+keystore rather than ordinary app storage. Traffic to our servers uses HTTPS. Our
+privileged server credentials and AI provider key exist only on the server and are never
+shipped in the app.</p>
+
+<p>No system is perfectly secure, and we cannot guarantee absolute security.</p>
+
+<h2>8. Children</h2>
+
+<p>Arsenal Edge is not intended for children under 13, and you must be at least 13 to
+create an account. We do not knowingly collect personal information from children under
+13. If you believe a child under 13 has given us personal information, email us and we
+will delete the account.</p>
+
+<h2>9. Data retention</h2>
+
+<p>We keep your data for as long as your account exists, because the app's value is the
+history it accumulates. When you delete your account, it goes immediately, subject to the
+provider log and backup windows described in Section 5.</p>
+
+<h2>10. International users</h2>
+
+<p>We operate from the United States and your data is processed there. If you use Arsenal
+Edge from outside the United States, you are sending your information to the United
+States, where privacy laws may differ from those in your country.</p>
+
+<h2>11. Changes to this policy</h2>
+
+<p>If we change this policy we will update the effective date at the top, and for
+significant changes we will make it apparent in the app. Continuing to use Arsenal Edge
+after a change means you accept the updated policy.</p>
+
+<h2>12. Contact</h2>
+
+<p>Aplomb Financial LLC<br>
+<a href="mailto:Kyle@aplombfinancial.com">Kyle@aplombfinancial.com</a></p>
+
+<footer>
+  <p><a href="index.html">Arsenal Edge legal</a> &middot;
+     <a href="terms.html">Terms of Service</a> &middot;
+     <a href="delete-account.html">Delete your account</a></p>
+</footer>
+
+</div>
+</body>
+</html>
